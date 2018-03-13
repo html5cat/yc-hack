@@ -11,7 +11,7 @@ const Header = (props) => (
       Day
     </h1>
     <h3 className="tagline">
-    <span>{this.props.tagline}</span>
+    <span>{props.tagline}</span>
   </h3>
   </header>
 )
