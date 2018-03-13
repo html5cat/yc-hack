@@ -16,6 +16,12 @@ export default class App extends React.Component {
     this.setState({ fishes })
   }
 
+  addToOrder = (fish) => {
+    const order = {...this.state.order}
+    order[fish] = order[fish] + 1 || 1
+    this.setState({ order })
+  }
+
   loadSampleFishes = () => {
     this.setState({ fishes: sampleFishes })
   }
@@ -23,7 +29,10 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="catch-of-the-day">
-        <Menu fishes={this.state.fishes} />
+        <Menu
+          fishes={this.state.fishes}
+          addToOrder={this.addToOrder}
+        />
         <Order />
         <Inventory
           addFish={this.addFish}
