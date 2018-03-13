@@ -3,7 +3,7 @@ import { formatPrice } from '../helpers'
 
 export default class Fish extends React.Component {
   handleClick = () => {
-    this.props.addToOrder(this.props.fish.name)
+    this.props.addToOrder(this.props.index)
   }
 
   render() {

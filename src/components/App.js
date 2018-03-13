@@ -33,7 +33,10 @@ export default class App extends React.Component {
           fishes={this.state.fishes}
           addToOrder={this.addToOrder}
         />
-        <Order />
+        <Order
+          order={this.state.order}
+          fishes={this.state.fishes}
+        />
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
