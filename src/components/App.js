@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header'
+import Menu from './Menu'
 import Order from './Order'
 import Inventory from './Inventory'
 import sampleFishes from '../sample-fishes'
@@ -23,9 +23,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="catch-of-the-day">
-        <div className="menu">
-          <Header tagline="Fresh Seafood Market" />
-        </div>
+        <Menu fishes={this.state.fishes} />
         <Order />
         <Inventory
           addFish={this.addFish}
