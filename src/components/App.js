@@ -39,6 +39,12 @@ export default class App extends React.Component {
     this.setState({ fishes })
   }
 
+  updateFish = (key, updatedFish) => {
+    const fishes = {...this.state.fishes}
+    fishes[key] = updatedFish
+    this.setState({ fishes })
+  }
+
   addToOrder = (fish) => {
     const order = {...this.state.order}
     order[fish] = order[fish] + 1 || 1
@@ -62,6 +68,8 @@ export default class App extends React.Component {
         />
         <Inventory
           addFish={this.addFish}
+          updateFish={this.updateFish}
+          fishes={this.state.fishes}
           loadSampleFishes={this.loadSampleFishes}
         />
       </div>
