@@ -45,9 +45,21 @@ export default class App extends React.Component {
     this.setState({ fishes })
   }
 
+  deleteFish = (key) => {
+    const fishes = {...this.state.fishes}
+    fishes[key] = null
+    this.setState({ fishes })
+  }
+
   addToOrder = (fish) => {
     const order = {...this.state.order}
     order[fish] = order[fish] + 1 || 1
+    this.setState({ order })
+  }
+
+  removeFromOrder = (fish) => {
+    const order = {...this.state.order}
+    delete order[fish]
     this.setState({ order })
   }
 
@@ -65,10 +77,12 @@ export default class App extends React.Component {
         <Order
           order={this.state.order}
           fishes={this.state.fishes}
+          removeFromOrder={this.removeFromOrder}
         />
         <Inventory
           addFish={this.addFish}
           updateFish={this.updateFish}
+          deleteFish={this.deleteFish}
           fishes={this.state.fishes}
           loadSampleFishes={this.loadSampleFishes}
         />

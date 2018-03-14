@@ -32,7 +32,7 @@ export default class EditFishForm extends React.Component {
     const fish = this.props.fish
 
     return (
-      <form className="fish-edit" onSubmit={this.createFish}>
+      <form className="fish-edit">
         <input name="name" onChange={this.handleChange} ref={this.nameRef} type="text" placeholder="Name" value={fish.name} />
         <input name="price" onChange={this.handleChange} ref={this.priceRef} type="text" placeholder="Price" value={fish.price} />
         <select name="status" onChange={this.handleChange} ref={this.statusRef}  value={fish.status}>
@@ -41,7 +41,7 @@ export default class EditFishForm extends React.Component {
         </select>
         <textarea name="desc" onChange={this.handleChange} ref={this.descRef} placeholder="Desc" value={fish.desc}></textarea>
         <input name="image" onChange={this.handleChange} ref={this.imageRef} type="text" placeholder="Image" value={fish.image} />
-        <button type="submit">+ Add Fish</button>
+        <button onClick={() => this.props.deleteFish(this.props.index)}>Remove Fish</button>
       </form>
     )
   }
