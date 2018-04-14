@@ -4,12 +4,9 @@ import {
 } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
-const _ = require('lodash')
+import base, { firebaseApp } from '../base';
 
-const dates = [
-  {header: 'Jane Doe', meta: 'September 29th', description: 'SOMA'},
-  {header: 'Emily Hu', meta: 'September 27th', description: 'Mountain View'},
-]
+const _ = require('lodash')
 
 const Question = (props) => (
     <Form.Group grouped>
@@ -33,12 +30,25 @@ export default class DateList extends React.Component {
         when: 'now',
       },
       dates: [
-        {who: 'Jane Doe', when: 'September 29th', where: 'SOMA'},
-        {who: 'Emily Hu', when: 'September 27th', where: 'Mountain View'},
-        {who: 'Ali Weiss', when: 'September 20th', where: 'San Jose'},
+        // {who: 'Jane Doe', when: 'September 29th', where: 'SOMA'},
+        // {who: 'Emily Hu', when: 'September 27th', where: 'Mountain View'},
+        // {who: 'Ali Weiss', when: 'September 20th', where: 'San Jose'},
       ]
     }
   }
+  //
+  // componentDidMount() {
+  //   let uid = firebase.auth().currentUser.uid
+  //   base.fetch(`yc/${uid}/dates`, {
+  //     context: this,
+  //     asArray: true
+  //   }).then(data => {
+  //     console.log(data);
+  //   }).catch(error => {
+  //     //handle error
+  //   })
+  //
+  // }
 
   logout() {
     console.log('logging out')
@@ -71,14 +81,23 @@ export default class DateList extends React.Component {
 
 
   addNewDate() {
-    this.setState(_.merge({}, this.state, {
-      dates: _.concat(this.state.dates, [this.state.newDate]),
-      newDate: {
-        who: '',
-        where: '',
-        when: '',
-      }
-    }))
+    let uid = firebase.auth().currentUser.uid
+
+    var ref = base.push(`yc/${uid}/dates/`, {data: this.state.newDate})
+      .then(newLocation => {
+        var date = this.state.newDate;
+        date['id'] = newLocation.key;
+        this.setState(_.merge({}, this.state, {
+          dates: _.concat(this.state.dates, [date]),
+          newDate: {
+            who: '',
+            where: '',
+            when: '',
+          }
+        }))
+      }).catch(err => {
+        //handle error
+      });
   }
 
   dateToCardGroup(dates) {
@@ -92,6 +111,7 @@ export default class DateList extends React.Component {
   }
 
   render() {
+    console.log(this.state)
     return (
       <Container>
         <Menu secondary>
@@ -121,7 +141,11 @@ export default class DateList extends React.Component {
         </Menu>
         <div>
           <Header size='large'>Your Dates</Header>
-          <Card.Group items={this.dateToCardGroup(this.state.dates)} />
+          {
+            _.isEmpty(this.state.dates)
+            ? <Header size='medium'>Go on more dates!</Header>
+            : <Card.Group items={this.dateToCardGroup(this.state.dates)} />
+          }
         </div>
       </Container>
     )

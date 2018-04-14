@@ -75,14 +75,9 @@ export default class Login extends React.Component {
         <h2>Login</h2>
         <p>Sign in to log your date</p>
         <Button
-          color='facebook'
-          onClick={() => this.authenticate('Facebook')}>
-          <Icon name='facebook' /> Facebook
-        </Button>
-        <Button
-          color='twitter'
-          onClick={() => this.authenticate('Twitter')}>
-          <Icon name='twitter' /> Twitter
+          color='google plus'
+          onClick={() => this.authenticate('Google')}>
+          <Icon name='google' /> Google
         </Button>
       </div>
     )
