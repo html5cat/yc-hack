@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 // import App from './App'
 import QuestionPack from './QuestionPack';
 import NotFound from './NotFound'
+import Dates from './Dates';
 import Login from './Login'
 import firebase from 'firebase'
 
@@ -10,8 +11,9 @@ const Router = () => (
   <div className='pad'>
     <BrowserRouter>
       <Switch>
+        <PrivateRoute path='/dates' component={Dates} />
+        <PrivateRoute path='/questions' component={QuestionPack} />
         <Route path='/login' component={Login}/>
-        <Route path='/questions' component={QuestionPack} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>

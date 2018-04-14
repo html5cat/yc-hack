@@ -3,10 +3,19 @@ import PropTypes from 'prop-types'
 import {
   Button, Icon,
 } from 'semantic-ui-react'
+import { Redirect } from 'react-router-dom'
 import firebase from 'firebase'
 import base, { firebaseApp } from '../base';
 
 export default class Login extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      uid: null,
+      redirectToReferrer: false
+    }
+  }
+
   componentDidMount() {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
@@ -16,21 +25,29 @@ export default class Login extends React.Component {
   }
 
   authHandler = async (authData) => {
-    const store = await base.fetch(this.props.storeId, {
-      context: this
-    })
-
-    if (!store.owner) {
-      await base.post(`${this.props.storeId}/owner`, {
-        data: authData.user.uid
-      })
-    }
+    // const store = await base.fetch(this.props.storeId, {
+    //   context: this
+    // })
+    //
+    // if (!store.owner) {
+    //   await base.post(`${this.props.storeId}/owner`, {
+    //     data: authData.user.uid
+    //   })
+    // }
+    //
+    // this.setState({
+    //   uid: authData.user.uid,
+    //   owner: store.owner || authData.user.uid
+    // })
+    // this.setState({
+    //   uid: authData.user.uid,
+    //   owner: store.owner || authData.user.uid
+    // })
 
     this.setState({
       uid: authData.user.uid,
-      owner: store.owner || authData.user.uid
-    })
-
+      redirectToReferrer: true
+    });
   }
 
   authenticate = (provider) => {
@@ -38,12 +55,15 @@ export default class Login extends React.Component {
     firebaseApp.auth().signInWithPopup(authProvider).then(this.authHandler)
   }
 
-  logout = async () => {
-    await firebase.auth().signOut()
-    this.setState({ uid: null })
-  }
-
   render() {
+    const { from } = this.props.location.state || { from: { pathname: "/" } };
+    const { redirectToReferrer } = this.state;
+
+    if (redirectToReferrer) {
+      return <Redirect to={from} />;
+    }
+
+
     return(
       <div className="login">
         <h2>Login</h2>
