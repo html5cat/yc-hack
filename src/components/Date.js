@@ -45,7 +45,7 @@ const Question = (props) => (
     </Form.Group>
 )
 
-export default class QuestionPack extends React.Component {
+export default class Date extends React.Component {
   constructor() {
     super()
   }
