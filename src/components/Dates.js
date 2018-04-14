@@ -1,21 +1,49 @@
 import React from 'react';
 import {
-  Button, Container, Grid, Header, Card, Item, Label, Menu, Input, Checkbox, Form,
+  Button, Container, Grid, Header, Card, Item, Label, Menu, Input, Checkbox, Form, Modal,
 } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
+const _ = require('lodash')
 
+const questions = [
+  {
+    text: 'What is your favorite type of ice cream?',
+    choices: [
+      'Chocolate',
+      'Vanilla',
+      'Strawberry',
+      'Other'
+    ],
+    answer: {
+      choice: null,
+      info: ''
+    }
+  },
+  {
+    text: 'What is your favorite type of ice cream',
+    choices: [
+      'Chocolate',
+      'Vanilla',
+    ],
+    answer: {
+      choice: null,
+      info: ''
+    }
+  },
+]
 
-const Question = (props) => {
-  <Form>
-    <Form.Group>
-      <Header size='medium'>Q1. This is question 1</Header>
-      <Form.Input placeholder='Name' name='name' />
-      <Form.Input placeholder='Email' name='email'/>
-      <Form.TextArea content='Submit' />
+const Question = (props) => (
+    <Form.Group grouped>
+      <Header size='medium'>{props.data.text}</Header>
+      {
+        _.map(props.data.choices, (choice, index) => {
+          return <Form.Checkbox key={index} label={choice}/>
+        })
+      }
+      <Form.TextArea width={12} label='Additional thoughts' />
     </Form.Group>
-  </Form>
-}
+)
 
 export default class QuestionPack extends React.Component {
   constructor() {
@@ -32,9 +60,29 @@ export default class QuestionPack extends React.Component {
   }
 
   renderDebrief() {
+    return (
       <div>
-        <Question/>
+        <Header size='large'>Debrief</Header>
+        <Form>
+          {_.map(questions, (question, index) => {
+            return <Question key={index} data={question}/>
+          })}
+        </Form>
+        <Modal
+          trigger={<Button>Share</Button>}
+          header='Share'
+          content={<Input label="Partner's Phone Number"/>}
+          actions={[
+            'Share Debrief',
+          ]}
+          style={{
+            marginTop: '0px !important',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }}
+        />
       </div>
+    )
   }
 
   renderNewDate() {
