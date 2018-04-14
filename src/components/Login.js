@@ -7,6 +7,7 @@ import { Redirect } from 'react-router-dom'
 import firebase from 'firebase'
 import base, { firebaseApp } from '../base';
 
+const _ = require('lodash')
 export default class Login extends React.Component {
   constructor() {
     super()
@@ -25,25 +26,30 @@ export default class Login extends React.Component {
   }
 
   authHandler = async (authData) => {
-    // const store = await base.fetch(this.props.storeId, {
-    //   context: this
-    // })
-    //
-    // if (!store.owner) {
-    //   await base.post(`${this.props.storeId}/owner`, {
-    //     data: authData.user.uid
-    //   })
-    // }
-    //
-    // this.setState({
-    //   uid: authData.user.uid,
-    //   owner: store.owner || authData.user.uid
-    // })
-    // this.setState({
-    //   uid: authData.user.uid,
-    //   owner: store.owner || authData.user.uid
-    // })
+    let uid = authData.user.uid
+    let user = await base.fetch(`yc/${uid}`, {
+      context: this
+    })
 
+    if (_.isEmpty(user)) {
+      await base.post(`yc/${uid}/dates`, {data: {__init__: '__init__'}})
+    }
+
+    user = await base.fetch(`yc/${uid}`, {
+      context: this
+    })
+
+    console.log(user)
+    //
+    // this.setState({
+    //   uid: authData.user.uid,
+    //   owner: store.owner || authData.user.uid
+    // })
+    // this.setState({
+    //   uid: authData.user.uid,
+    //   owner: store.owner || authData.user.uid
+    // })
+    //
     this.setState({
       uid: authData.user.uid,
       redirectToReferrer: true
@@ -52,7 +58,7 @@ export default class Login extends React.Component {
 
   authenticate = (provider) => {
     const authProvider = new firebase.auth[`${provider}AuthProvider`]()
-    firebaseApp.auth().signInWithPopup(authProvider).then(this.authHandler)
+    firebaseApp.auth().signInWithPopup(authProvider).then(this.props.authHandler)
   }
 
   render() {
