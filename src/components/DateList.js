@@ -1,11 +1,12 @@
 import React from 'react';
 import {
-  Button, Container, Grid, Header, Card, Item, Label, Menu, Input, Checkbox, Form, Modal,
+  Button, Container, Grid, Header, Card, Item, Divider, Label, Menu, Input, Checkbox, Form, Modal, List
 } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
 import base, { firebaseApp } from '../base';
 import DateListItem from '../pagedraw/datelistitem'
+import '../css/styles.css'
 const _ = require('lodash')
 
 const Question = (props) => (
@@ -101,8 +102,9 @@ export default class DateList extends React.Component {
     var ref = base.push(`yc/${uid}/dates/`, {data: this.state.newDate})
       .then(newLocation => {
         var date = this.state.newDate;
-        date['id'] = newLocation.key;
+        date['key'] = newLocation.key;
         this.setState(_.merge({}, this.state, {
+          modalPage: 1,
           dates: _.concat(this.state.dates, [date]),
           newDate: {
             name: '',
@@ -122,6 +124,29 @@ export default class DateList extends React.Component {
     })
   }
 
+  renderReminders() {
+    return (
+      <div className="pad-large">
+        <Header content="Things to Remember" />
+
+        <Modal.Content>
+          <List>
+            <List.Content>
+              <List.Item><Checkbox label="Who"/></List.Item>
+              <List.Item><Checkbox label="Who"/></List.Item>
+            </List.Content>
+          </List>
+        </Modal.Content>
+        <Divider/>
+        <Modal.Actions>
+          <Button color='blue' inverted>
+            Got It
+          </Button>
+        </Modal.Actions>
+      </div>
+    )
+  }
+
   render() {
     console.log(this.state)
     return (
@@ -129,7 +154,9 @@ export default class DateList extends React.Component {
         <Menu secondary>
           <Menu.Menu position='right'>
             <Modal
-              onClose={() => {this.setState({_.merge({}, this.state, {modalPage: 0})})}}
+              onClose={() => {
+                this.setState(_.merge({}, this.state, {modalPage: 0}))
+              }}
               trigger={<Menu.Item icon='plus' name='New Date'/>}
               style={{
                 marginTop: '0px !important',
@@ -137,20 +164,27 @@ export default class DateList extends React.Component {
                 marginRight: 'auto'
               }}
             >
-              <Header content='Add New Date' />
+              {
+                this.state.modalPage==1 ? this.renderReminders() :
+                <div className="pad-large">
+                  <Header content='Add New Date' />
 
-              <Modal.Content>
-                <Input label="Who" defaultValue={this.state.newDate.name} onChange={(e) => this.updateNewDateName(e)}/>
-                <Input label="Where" defaultValue={this.state.newDate.location} onChange={(e) => this.updateNewDateLocation(e)}/>
-                <Input label="Month" defaultValue={this.state.newDate.month}  onChange={(e) => this.updateNewDateMonth(e)}/>
-                <Input label="Day" defaultValue={this.state.newDate.day}  onChange={(e) => this.updateNewDateDay(e)}/>
+                  <Modal.Content>
+                    <Input label="Who" defaultValue={this.state.newDate.name} onChange={(e) => this.updateNewDateName(e)}/>
+                    <Input label="Where" defaultValue={this.state.newDate.location} onChange={(e) => this.updateNewDateLocation(e)}/>
+                    <Input label="Month" defaultValue={this.state.newDate.month}  onChange={(e) => this.updateNewDateMonth(e)}/>
+                    <Input label="Day" defaultValue={this.state.newDate.day}  onChange={(e) => this.updateNewDateDay(e)}/>
 
-              </Modal.Content>
-              <Modal.Actions>
-                <Button color='green' inverted onClick={() => this.addNewDate()}>
-                  Create
-                </Button>
-              </Modal.Actions>
+                  </Modal.Content>
+                  <Modal.Actions>
+                    <Button color='green' inverted onClick={() => this.addNewDate()}>
+                      Create
+                    </Button>
+                  </Modal.Actions>
+                </div>
+              }
+
+
             </Modal>
             <Menu.Item name='Logout' onClick={() => this.logout()} />
           </Menu.Menu>
