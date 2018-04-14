@@ -9,6 +9,11 @@ import DateListItem from '../pagedraw/datelistitem'
 import '../css/styles.css'
 const _ = require('lodash')
 
+const checklist = [
+  "a",
+  "bug",
+  'charlie'
+]
 const Question = (props) => (
     <Form.Group grouped>
       <Header size='medium'>{props.data.text}</Header>
@@ -132,8 +137,13 @@ export default class DateList extends React.Component {
         <Modal.Content>
           <List>
             <List.Content>
-              <List.Item><Checkbox label="Who"/></List.Item>
-              <List.Item><Checkbox label="Who"/></List.Item>
+              {
+                _.map(checklist, (text, index) => {
+                  return <List.Item key={index}>
+                    <Checkbox label={text}/>
+                  </List.Item>
+                })
+              }
             </List.Content>
           </List>
         </Modal.Content>
