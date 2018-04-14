@@ -12,11 +12,19 @@ function render() {
                             <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1233826191090713-1523741622317-B22F1F13-8F1B-4419-9E4F-04569DD17358.png" className="createdatequestions-arrow-left-1" /> 
                         </div>
                     </div>
-                    <div className="createdatequestions-title-9">
-                        {"Don’t Forget"}
+                    <div className="createdatequestions-0-0-0-1">
+                        <div className="createdatequestions-0-0-0-1-0">
+                            <div className="createdatequestions-title-9">
+                                {"Don’t Forget"}
+                            </div>
+                        </div>
                     </div>
-                    <div className="createdatequestions-title_copy-5">
-                        Save
+                    <div className="createdatequestions-0-0-0-2">
+                        <div className="createdatequestions-0-0-0-2-0">
+                            <div className="createdatequestions-title_copy-5">
+                                Save
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

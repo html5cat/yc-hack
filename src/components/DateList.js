@@ -5,7 +5,7 @@ import {
 import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
 import base, { firebaseApp } from '../base';
-
+import DateListItem from '../pagedraw/datelistitem'
 const _ = require('lodash')
 
 const Question = (props) => (
@@ -24,10 +24,12 @@ export default class DateList extends React.Component {
   constructor() {
     super()
     this.state = {
+      modalPage: 0,
       newDate: {
-        who: 'me',
-        where: 'here',
-        when: 'now',
+        name: 'me',
+        location: 'here',
+        month: 'Sep',
+        day: '28'
       },
       dates: [
         // {who: 'Jane Doe', when: 'September 29th', where: 'SOMA'},
@@ -36,45 +38,58 @@ export default class DateList extends React.Component {
       ]
     }
   }
-  //
-  // componentDidMount() {
-  //   let uid = firebase.auth().currentUser.uid
-  //   base.fetch(`yc/${uid}/dates`, {
-  //     context: this,
-  //     asArray: true
-  //   }).then(data => {
-  //     console.log(data);
-  //   }).catch(error => {
-  //     //handle error
-  //   })
-  //
-  // }
+
+  componentDidMount() {
+    let uid = firebase.auth().currentUser.uid
+    base.fetch(`yc/${uid}/dates`, {
+      context: this,
+      asArray: true
+    }).then(data => {
+      _.remove(data, (datum) => {
+        return datum=='__init__';
+      })
+      this.setState(_.merge({}, this.state, {
+        dates: data
+      }))
+    }).catch(error => {
+      //handle error
+    })
+
+  }
 
   logout() {
     console.log('logging out')
     firebase.auth().signOut()
   }
 
-  updateNewDateWho(e) {
+  updateNewDateName(e) {
     this.setState(_.merge({}, this.state, {
       newDate: {
-        who: e.target.value
+        name: e.target.value
       }
     }))
   }
 
-  updateNewDateWhere(e) {
+  updateNewDateLocation(e) {
     this.setState(_.merge({}, this.state, {
       newDate: {
-        where: e.target.value
+        location: e.target.value
       }
     }))
   }
 
-  updateNewDateWhen(e) {
+  updateNewDateMonth(e) {
     this.setState(_.merge({}, this.state, {
       newDate: {
-        when: e.target.value
+        month: e.target.value
+      }
+    }))
+  }
+
+  updateNewDateDay(e) {
+    this.setState(_.merge({}, this.state, {
+      newDate: {
+        day: e.target.value
       }
     }))
   }
@@ -90,9 +105,10 @@ export default class DateList extends React.Component {
         this.setState(_.merge({}, this.state, {
           dates: _.concat(this.state.dates, [date]),
           newDate: {
-            who: '',
-            where: '',
-            when: '',
+            name: '',
+            location: '',
+            month: '',
+            day: ''
           }
         }))
       }).catch(err => {
@@ -102,11 +118,7 @@ export default class DateList extends React.Component {
 
   dateToCardGroup(dates) {
     return _.map(dates, (date) => {
-      return {
-        header: date.who,
-        meta: date.when,
-        description: date.where,
-      }
+      return <DateListItem key={date.key} date={date} privateLink="jkjk"/>
     })
   }
 
@@ -117,6 +129,7 @@ export default class DateList extends React.Component {
         <Menu secondary>
           <Menu.Menu position='right'>
             <Modal
+              onClose={() => {this.setState({_.merge({}, this.state, {modalPage: 0})})}}
               trigger={<Menu.Item icon='plus' name='New Date'/>}
               style={{
                 marginTop: '0px !important',
@@ -125,10 +138,13 @@ export default class DateList extends React.Component {
               }}
             >
               <Header content='Add New Date' />
+
               <Modal.Content>
-                <Input label="With who?" defaultValue={this.state.newDate.who} onChange={(e) => this.updateNewDateWho(e)}/>
-                <Input label="Where?" defaultValue={this.state.newDate.where} onChange={(e) => this.updateNewDateWhere(e)}/>
-                <Input label="When" defaultValue={this.state.newDate.when}  onChange={(e) => this.updateNewDateWhen(e)}/>
+                <Input label="Who" defaultValue={this.state.newDate.name} onChange={(e) => this.updateNewDateName(e)}/>
+                <Input label="Where" defaultValue={this.state.newDate.location} onChange={(e) => this.updateNewDateLocation(e)}/>
+                <Input label="Month" defaultValue={this.state.newDate.month}  onChange={(e) => this.updateNewDateMonth(e)}/>
+                <Input label="Day" defaultValue={this.state.newDate.day}  onChange={(e) => this.updateNewDateDay(e)}/>
+
               </Modal.Content>
               <Modal.Actions>
                 <Button color='green' inverted onClick={() => this.addNewDate()}>
@@ -144,7 +160,7 @@ export default class DateList extends React.Component {
           {
             _.isEmpty(this.state.dates)
             ? <Header size='medium'>Go on more dates!</Header>
-            : <Card.Group items={this.dateToCardGroup(this.state.dates)} />
+            : this.dateToCardGroup(this.state.dates)
           }
         </div>
       </Container>
