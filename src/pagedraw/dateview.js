@@ -20,13 +20,21 @@ function render() {
                 </div>
                 <div className="dateview-0-0-1">
                     <div className="dateview-julian_leeroy-1">
-                        Julian Leeroy
+                        { this.props.date.name }
                     </div>
                 </div>
                 <div className="dateview-0-0-2">
-                    <div className="dateview-hint_text-6">
-                        <div>{"South of Market, San Fransisco "}</div>
-                        <div>{"July 9th, 2018                     "}</div>
+                    <div className="dateview-0-0-2-0">
+                        <div className="dateview-0-0-2-0-0">
+                            <div className="dateview-0-0-2-0-0-0">
+                                <div className="dateview-hint_text-6">
+                                    { this.props.date.location }
+                                </div>
+                                <div className="dateview-hint_text-4">
+                                    { this.props.date.month + this.props.date.day }
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

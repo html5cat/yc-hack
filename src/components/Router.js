@@ -7,6 +7,7 @@ import Date from './Date';
 import DateList from './DateList';
 import Login from './Login'
 import firebase from 'firebase'
+import Homepage from '../pagedraw/homepage'
 
 const Router = () => (
   <div className='pad'>
@@ -16,7 +17,7 @@ const Router = () => (
         <PrivateRoute path='/dates/:date_id' component={Date} />
         <PrivateRoute path='/questions' component={QuestionPack} />
         <Route path='/login' component={Login}/>
-        <Route component={NotFound} />
+        <Route component={Homepage} />
       </Switch>
     </BrowserRouter>
   </div>
