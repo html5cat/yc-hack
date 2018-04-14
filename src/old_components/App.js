@@ -16,7 +16,7 @@ export default class App extends React.Component {
     if(localStorageRef) {
       this.setState({order: JSON.parse(localStorageRef)})
     }
-    this.baseRef = base.syncState(`${this.props.match.params.storeId}/questions`, {
+    this.baseRef = base.syncState(`${this.props.match.params.storeId}/fishes`, {
       context: this,
       state: "fishes"
     })
