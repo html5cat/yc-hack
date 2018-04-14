@@ -1,5 +1,8 @@
 import React from 'react'
 import { getFunName } from '../helpers'
+import DateList from '../pagedraw/datelist'
+import DateView from '../pagedraw/dateview'
+import CreateDateQuestions from '../pagedraw/createdatequestions'
 
 export default class StorePicker extends React.Component {
   storeName = React.createRef()
@@ -12,17 +15,22 @@ export default class StorePicker extends React.Component {
 
   render() {
     return (
-      <form className="store-selector" onSubmit={this.goToStore}>
-      <h2>Please enter a store</h2>
-        <input
-          type="text"
-          ref={this.storeName}
-          required
-          placeholder={"Store Name"}
-          defaultValue={getFunName()}
-        />
-        <button type="submit">Visit store</button>
-      </form>
+      <div>
+        <DateList></DateList>
+        <DateView></DateView>
+        <CreateDateQuestions></CreateDateQuestions>
+        <form className="store-selector" onSubmit={this.goToStore}>
+          <h2>Please enter a store</h2>
+          <input
+            type="text"
+            ref={this.storeName}
+            required
+            placeholder={"Store Name"}
+            defaultValue={getFunName()}
+          />
+          <button type="submit">Visit store</button>
+        </form>
+      </div>
     )
   }
 }
