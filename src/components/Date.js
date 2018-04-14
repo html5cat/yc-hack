@@ -6,7 +6,7 @@ import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
 const _ = require('lodash')
 
-const questions = [
+const debrief = [
   {
     text: 'What is your favorite type of ice cream?',
     choices: [
@@ -55,16 +55,13 @@ export default class QuestionPack extends React.Component {
     firebase.auth().signOut()
   }
 
-  addNewDate() {
-
-  }
 
   renderDebrief() {
     return (
       <div>
         <Header size='large'>Debrief</Header>
         <Form>
-          {_.map(questions, (question, index) => {
+          {_.map(debrief, (question, index) => {
             return <Question key={index} data={question}/>
           })}
         </Form>
@@ -85,7 +82,7 @@ export default class QuestionPack extends React.Component {
     )
   }
 
-  renderNewDate() {
+  renderDate() {
     return (
       <div>
         <Header size='large'>New Date</Header>
@@ -124,25 +121,14 @@ export default class QuestionPack extends React.Component {
     )
   }
 
-  renderDateList() {
-    return (
-      <div>
-        <Header size='large'>Your Dates</Header>
-        <Card.Group items={[
-          {header: 'Jane Doe', meta: 'September 29th', description: 'SOMA'},
-          {header: 'Emily Hu', meta: 'September 27th', description: 'Mountain View'},
-        ]} />
-      </div>
-    )
-  }
+
 
   render() {
     return (
       <Container>
         <Menu secondary>
           <Menu.Menu position='right'>
-            <Menu.Item icon='plus' name='New Date' onClick={() => this.addNewDate()} />
-            <Menu.Item name='Logout' onClick={() => this.logout()} />
+            <Menu.Item icon='plus' name='New Date' onClick={() => this.triggerModal()}/>
           </Menu.Menu>
         </Menu>
         {this.renderDebrief()}
