@@ -38,16 +38,17 @@ const Question = (props) => (
       <Header size='medium'>{props.data.text}</Header>
       {
         _.map(props.data.choices, (choice, index) => {
-          return <Form.Checkbox key={index} label={choice}/>
+          return <Form.Checkbox key={index} label={choice} questionKey={props.key} onClick={this.props.handleOnClick}/>
         })
       }
       <Form.TextArea width={12} label='Additional thoughts' />
     </Form.Group>
 )
 
-export default class Date extends React.Component {
+export default class SharedReflection extends React.Component {
   constructor() {
     super()
+    this.state = debrief;
   }
 
   logout() {
@@ -56,10 +57,17 @@ export default class Date extends React.Component {
   }
 
 
+  onClick() {
+    let newState = Object.assign({}, this.state);
+    this.setState({
+
+    })
+  }
+
   renderDebrief() {
     return (
       <div>
-        <Header size='large'>Debrief</Header>
+        <Header size='large'>Shared Reflection</Header>
         <Form>
           {_.map(debrief, (question, index) => {
             return <Question key={index} data={question}/>
@@ -68,10 +76,11 @@ export default class Date extends React.Component {
         <Modal
           trigger={<Button>Share</Button>}
           header='Share'
-          content={<Input label="Partner's Phone Number"/>}
-          actions={[
-            'Share Debrief',
-          ]}
+          content={
+            <div className="pad-large">
+              <p>Link to share with your partner: {"https://datable.netlify.com" +  this.props.match.url + '/partners'}</p>
+            </div>
+          }
           style={{
             marginTop: '0px !important',
             marginLeft: 'auto',
@@ -124,12 +133,11 @@ export default class Date extends React.Component {
 
 
   render() {
+    console.log(this.state)
     return (
       <Container>
         <Menu secondary>
-          <Menu.Menu position='right'>
-            <Menu.Item icon='plus' name='New Date' onClick={() => this.triggerModal()}/>
-          </Menu.Menu>
+
         </Menu>
         {this.renderDebrief()}
       </Container>
