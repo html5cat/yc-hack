@@ -5,15 +5,17 @@ import './homepage.css';
 function render() {
     return <div className="homepage-homepage-7">
         <div className="homepage-0">
-            <div className="homepage-datable-1">Datable</div>
+            <div className="homepage-datable-1">Datable </div>
         </div>
         <div className="homepage-1">
             <div className="homepage-better_dates_through-1">
-                Better dates through improved self awarenss
+                Better dates through improved self awareness
             </div>
         </div>
         <div className="homepage-2">
+            <div className="homepage-2-0" /> 
             <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/9083395406385505-1523749707372-97B79CC6-E7A6-4A80-B29B-736FCB69459B.png" className="homepage-undraw_together_j0" /> 
+            <div className="homepage-2-2" /> 
         </div>
         <div className="homepage-3">
             <div className="homepage-path-4">
@@ -177,115 +179,137 @@ function render() {
             </div>
         </div>
         <div className="homepage-4">
-            <div className="homepage-we_help_you_reflect-5">
-                We help you reflect to provide valuable insight 
-            </div>
-        </div>
-        <div className="homepage-5">
-            <div className="homepage-5-0">
-                <div className="homepage-5-0-0">
-                    <div className="homepage-5-0-0-0">
-                        <div className="homepage-shape-15">
-                            <div className="homepage-5-0-0-0-0-0">
-                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/4105192488660312-1523749707401-F543E775-F20E-4370-8329-FE94F0EAEB0C.png" className="homepage-shape-41" /> 
-                            </div>
-                        </div>
-                        <div className="homepage-shape-1624">
-                            <div className="homepage-5-0-0-0-1-0">
-                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1082821112681942-1523749707399-F01FCFF1-6B83-4203-AE85-51BE855AE920.png" className="homepage-shape-108" /> 
-                            </div>
-                        </div>
-                        <div className="homepage-rectangle-path-166">
-                            <div className="homepage-5-0-0-0-2-0">
-                                <div className="homepage-rectangle-path-29">
-                                    <div className="homepage-5-0-0-0-2-0-0-0">
-                                        <div className="homepage-5-0-0-0-2-0-0-0-0">
-                                            <div className="homepage-5-0-0-0-2-0-0-0-0-0">
-                                                <div className="homepage-5-0-0-0-2-0-0-0-0-0-0">
-                                                    <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1724481565314246-1523749706184-5CAF6ED6-BFAE-4E8B-B23C-F9CD53D79D75.png" className="homepage-shape-172" /> 
-                                                    <div className="homepage-shape-142">
-                                                        <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-0">
-                                                            <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-0-0">
-                                                                <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-0-0-0">
-                                                                    <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-0-0-0-0">
-                                                                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/6283059663688864-1523749706194-40A7E6CF-173D-4ABB-82DA-6A1EFE2E8AD2.png" className="homepage-shape-62" /> 
-                                                                        <div className="homepage-oval-307">
-                                                                            <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-0-0-0-0-1-0">
-                                                                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1502755604308017-1523749706197-6805F463-BB25-434E-8A25-DDDF1D1A8215.png" className="homepage-shape-150" /> 
+            <div className="homepage-4-0" /> 
+            <div className="homepage-rectangle-9">
+                <div className="homepage-4-1-0">
+                    <div className="homepage-we_help_you_reflect-5">
+                        We help you reflect to provide valuable insight 
+                    </div>
+                </div>
+                <div className="homepage-4-1-1">
+                    <div className="homepage-4-1-1-0">
+                        <div className="homepage-4-1-1-0-0">
+                            <div className="homepage-4-1-1-0-0-0">
+                                <div className="homepage-shape-15">
+                                    <div className="homepage-4-1-1-0-0-0-0-0">
+                                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/4105192488660312-1523749707401-F543E775-F20E-4370-8329-FE94F0EAEB0C.png" className="homepage-shape-41" /> 
+                                    </div>
+                                </div>
+                                <div className="homepage-shape-1624">
+                                    <div className="homepage-4-1-1-0-0-0-1-0">
+                                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1082821112681942-1523749707399-F01FCFF1-6B83-4203-AE85-51BE855AE920.png" className="homepage-shape-108" /> 
+                                    </div>
+                                </div>
+                                <div className="homepage-rectangle-path-166">
+                                    <div className="homepage-4-1-1-0-0-0-2-0">
+                                        <div className="homepage-rectangle-path-29">
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-0">
+                                                <div className="homepage-4-1-1-0-0-0-2-0-0-0-0">
+                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0">
+                                                        <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0">
+                                                            <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1724481565314246-1523749706184-5CAF6ED6-BFAE-4E8B-B23C-F9CD53D79D75.png" className="homepage-shape-172" /> 
+                                                            <div className="homepage-shape-142">
+                                                                <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-0">
+                                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-0-0">
+                                                                        <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-0-0-0">
+                                                                            <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-0-0-0-0">
+                                                                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/6283059663688864-1523749706194-40A7E6CF-173D-4ABB-82DA-6A1EFE2E8AD2.png" className="homepage-shape-62" /> 
+                                                                                <div className="homepage-oval-307">
+                                                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-0-0-0-0-1-0">
+                                                                                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1502755604308017-1523749706197-6805F463-BB25-434E-8A25-DDDF1D1A8215.png" className="homepage-shape-150" /> 
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <div className="homepage-4-1-1-0-0-0-2-0-0-0-0-0-0-1-1">
+                                                                    <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1250725903756171-1523749706189-2DBE331F-8606-41D5-9CBD-7EF878229E7A.png" className="homepage-shape-1250" /> 
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div className="homepage-5-0-0-0-2-0-0-0-0-0-0-1-1">
-                                                            <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1250725903756171-1523749706189-2DBE331F-8606-41D5-9CBD-7EF878229E7A.png" className="homepage-shape-1250" /> 
-                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-1">
+                                                <div className="homepage-rectangle-path-7" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-2">
+                                                <div className="homepage-rectangle-path-6" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-3">
+                                                <div className="homepage-rectangle-path-1" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-4">
+                                                <div className="homepage-rectangle-path-2" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-5">
+                                                <div className="homepage-rectangle-path-4" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-6">
+                                                <div className="homepage-rectangle-path-16" /> 
+                                            </div>
+                                            <div className="homepage-4-1-1-0-0-0-2-0-0-7">
+                                                <div className="homepage-rectangle-path-11">
+                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-7-0-0">
+                                                        <div className="homepage-rectangle-path-25" /> 
+                                                    </div>
+                                                </div>
+                                                <div className="homepage-4-1-1-0-0-0-2-0-0-7-1">
+                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-7-1-0">
+                                                        <div className="homepage-rectangle-path-12" /> 
+                                                    </div>
+                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-7-1-1">
+                                                        <div className="homepage-rectangle-path-15" /> 
+                                                    </div>
+                                                    <div className="homepage-4-1-1-0-0-0-2-0-0-7-1-2">
+                                                        <div className="homepage-rectangle-path-28" /> 
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-1">
-                                        <div className="homepage-rectangle-path-7" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-2">
-                                        <div className="homepage-rectangle-path-6" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-3">
-                                        <div className="homepage-rectangle-path-1" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-4">
-                                        <div className="homepage-rectangle-path-2" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-5">
-                                        <div className="homepage-rectangle-path-4" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-6">
-                                        <div className="homepage-rectangle-path-16" /> 
-                                    </div>
-                                    <div className="homepage-5-0-0-0-2-0-0-7">
-                                        <div className="homepage-rectangle-path-11">
-                                            <div className="homepage-5-0-0-0-2-0-0-7-0-0">
-                                                <div className="homepage-rectangle-path-25" /> 
-                                            </div>
-                                        </div>
-                                        <div className="homepage-5-0-0-0-2-0-0-7-1">
-                                            <div className="homepage-5-0-0-0-2-0-0-7-1-0">
-                                                <div className="homepage-rectangle-path-12" /> 
-                                            </div>
-                                            <div className="homepage-5-0-0-0-2-0-0-7-1-1">
-                                                <div className="homepage-rectangle-path-15" /> 
-                                            </div>
-                                            <div className="homepage-5-0-0-0-2-0-0-7-1-2">
-                                                <div className="homepage-rectangle-path-28" /> 
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="homepage-shape-69">
-                            <div className="homepage-5-0-0-0-3-0">
-                                <div className="homepage-5-0-0-0-3-0-0">
-                                    <div className="homepage-shape-167">
-                                        <div className="homepage-5-0-0-0-3-0-0-0-0">
-                                            <div className="homepage-oval-76">
-                                                <div className="homepage-5-0-0-0-3-0-0-0-0-0-0">
-                                                    <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/3614352462268413-1523749706206-BB3EB9AE-EB0B-437C-918B-4EA4804E5927.png" className="homepage-shape-36" /> 
+                                <div className="homepage-shape-69">
+                                    <div className="homepage-4-1-1-0-0-0-3-0">
+                                        <div className="homepage-4-1-1-0-0-0-3-0-0">
+                                            <div className="homepage-shape-167">
+                                                <div className="homepage-4-1-1-0-0-0-3-0-0-0-0">
+                                                    <div className="homepage-oval-76">
+                                                        <div className="homepage-4-1-1-0-0-0-3-0-0-0-0-0-0">
+                                                            <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/3614352462268413-1523749706206-BB3EB9AE-EB0B-437C-918B-4EA4804E5927.png" className="homepage-shape-36" /> 
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
+                                            <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1643126957871647-1523749706203-6F5DFD45-7405-46E8-B543-51588EEAE616.png" className="homepage-shape-1643" /> 
                                         </div>
                                     </div>
-                                    <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1643126957871647-1523749706203-6F5DFD45-7405-46E8-B543-51588EEAE616.png" className="homepage-shape-1643" /> 
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div className="homepage-4-2" /> 
         </div>
-        <div className="homepage-6" /> 
+        <div className="homepage-5">
+            <a href="/dates/" className="homepage-5-0">
+                <div className="homepage-path-3">
+                    <div className="homepage-5-0-0-0">
+                        <div className="homepage-5-0-0-0-0" /> 
+                        <div className="homepage-share_debrief-7">
+                            {"Get Started!"}
+                        </div>
+                        <div className="homepage-5-0-0-0-2" /> 
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div className="homepage-6">
+            <div className="homepage-rectangle_2" /> 
+        </div>
+        <div className="homepage-7" /> 
     </div>;
 };
 
