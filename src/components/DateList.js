@@ -161,6 +161,9 @@ export default class DateList extends React.Component {
 
   render() {
     console.log(this.state)
+    if ('ontouchstart' in document.documentElement) {
+      document.body.style.cursor = 'pointer';
+    }
     return (
       <Container>
         <Menu secondary>
