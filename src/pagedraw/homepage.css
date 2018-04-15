@@ -1078,38 +1078,23 @@
 .homepage-4 {
     display: flex;
     margin-top: 5px;
-    padding-left: 4px;
 }
 
 .homepage-4-0 {
-    display: flex;
-    flex-direction: column;
-}
-
-.homepage-4-0-0 {
-    display: flex;
-}
-
-.homepage-4-0-0-0 {
-    width: 371px;
-    height: 470px;
-    flex-shrink: 0;
-    position: relative;
+    height: 0px;
+    flex-grow: 0.5714285714285714;
+    flex-basis: 0px;
 }
 
 .homepage-rectangle-9 {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     padding-top: 41px;
-    padding-bottom: 70px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
+    padding-bottom: 7px;
     background: rgba(255, 255, 255, 0);
 }
 
-.homepage-4-0-0-0-0-0 {
+.homepage-4-1-0 {
     display: flex;
     padding-left: 24px;
     padding-right: 18px;
@@ -1130,23 +1115,23 @@
     word-wrap: break-word;
 }
 
-.homepage-4-0-0-0-0-1 {
+.homepage-4-1-1 {
     display: flex;
-    margin-top: 13px;
     padding-left: 26px;
-    padding-right: 183px;
 }
 
-.homepage-4-0-0-0-0-1-0 {
+.homepage-4-1-1-0 {
     display: flex;
     flex-direction: column;
+    padding-top: 13px;
+    padding-bottom: 63px;
 }
 
-.homepage-4-0-0-0-0-1-0-0 {
+.homepage-4-1-1-0-0 {
     display: flex;
 }
 
-.homepage-4-0-0-0-0-1-0-0-0 {
+.homepage-4-1-1-0-0-0 {
     width: 159px;
     height: 232px;
     flex-shrink: 0;
@@ -1184,12 +1169,12 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-0-1-0-0-0-1-0 {
+.homepage-4-1-1-0-0-0-1-0 {
     display: flex;
     padding-right: 19px;
 }
 
-.homepage-4-0-0-0-0-1-0-0-0-1-0-0 {
+.homepage-4-1-1-0-0-0-1-0-0 {
     width: 78px;
     height: 74px;
     flex-shrink: 0;
@@ -1209,7 +1194,7 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-0-1-0-0-0-1-0-0-0-0 {
+.homepage-4-1-1-0-0-0-1-0-0-0-0 {
     display: flex;
     padding-right: 11px;
 }
@@ -1223,7 +1208,7 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-0-1-0-0-0-1-0-0-0-0-0-0 {
+.homepage-4-1-1-0-0-0-1-0-0-0-0-0-0 {
     display: flex;
     padding-left: 25px;
     padding-right: 21px;
@@ -1246,6 +1231,22 @@
     border-width: 0px;
 }
 
+.homepage-4-1-1-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-4-1-1-1-0 {
+    display: flex;
+}
+
+.homepage-4-1-1-1-0-0 {
+    width: 183px;
+    height: 308px;
+    flex-shrink: 0;
+    position: relative;
+}
+
 .homepage-shape-15 {
     display: flex;
     flex-direction: column;
@@ -1253,13 +1254,13 @@
     padding-top: 4px;
     padding-bottom: 5px;
     position: absolute;
-    top: 155px;
-    left: 185px;
+    top: 0px;
+    left: 0px;
     background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/1595508222803629-1523752640159-EB9C5076-8269-48B7-A12C-19A918EE9354.png');
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-1-0 {
+.homepage-4-1-1-1-0-0-0-0 {
     display: flex;
     padding-left: 5px;
 }
@@ -1273,68 +1274,74 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-1-0-0-0 {
+.homepage-4-1-1-1-0-0-0-0-0-0 {
     display: flex;
     padding-left: 17px;
-    padding-right: 3px;
 }
 
 .homepage-rectangle-path-1 {
-    width: 161px;
-    height: 266px;
-    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3px;
+    padding-bottom: 1.9999999999998863px;
     background: linear-gradient(0deg, rgba(128,128,128,0.25), rgba(128,128,128,0.12));
 }
 
-.homepage-shape-1624 {
-    width: 146px;
-    height: 285px;
-    flex-grow: 1;
-    position: absolute;
-    top: 178px;
-    left: 225px;
-    border-width: 0px;
+.homepage-4-1-1-1-0-0-0-0-0-0-0-0 {
+    display: flex;
+    padding-left: 3px;
 }
 
 .homepage-rectangle-path-2 {
     width: 158px;
-    height: 261.0000000000001px;
-    flex-grow: 1;
-    position: absolute;
-    top: 178px;
-    left: 210px;
+    height: 261px;
+    flex-shrink: 0;
     background: rgb(255, 255, 255);
+}
+
+.homepage-shape-1624 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 7px;
+    padding-bottom: 2px;
+    position: absolute;
+    top: 23px;
+    left: 40px;
+    background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/1624395768475543-1523752640156-23660280-A088-4567-B740-F40E69EE2A80.png');
+    background-size: 100% 100%;
+}
+
+.homepage-4-1-1-1-0-0-1-0 {
+    display: flex;
+    padding-left: 2px;
 }
 
 .homepage-shape-108 {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     padding-top: 3px;
     padding-bottom: 48px;
-    position: absolute;
-    top: 185px;
-    left: 227px;
     background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/1082821112681942-1523752640158-F01FCFF1-6B83-4203-AE85-51BE855AE920.png');
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-4-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0 {
     display: flex;
     padding-left: 48px;
     padding-right: 31px;
 }
 
-.homepage-4-0-0-0-4-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0 {
     display: flex;
     flex-direction: column;
 }
 
-.homepage-4-0-0-0-4-0-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0 {
     display: flex;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0 {
     width: 62px;
     height: 70px;
     flex-shrink: 0;
@@ -1363,22 +1370,22 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-0 {
     display: flex;
     padding-left: 20px;
     padding-right: 16px;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-0-0 {
     display: flex;
     flex-direction: column;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-0-0-0 {
     display: flex;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-0-0-0-0 {
     width: 26px;
     height: 30px;
     flex-shrink: 0;
@@ -1407,7 +1414,7 @@
     background-size: 100% 100%;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0-1-0 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-0-0-0-0-1-0 {
     display: flex;
     padding-left: 18px;
 }
@@ -1419,7 +1426,7 @@
     border-width: 0px;
 }
 
-.homepage-4-0-0-0-4-0-0-0-0-1-1 {
+.homepage-4-1-1-1-0-0-1-0-0-0-0-0-0-1-1 {
     display: flex;
     margin-top: 7px;
     padding-left: 21px;
@@ -1433,7 +1440,7 @@
     border-width: 0px;
 }
 
-.homepage-4-0-0-0-4-1 {
+.homepage-4-1-1-1-0-0-1-0-0-1 {
     display: flex;
     margin-top: 19px;
     padding-left: 48px;
@@ -1447,7 +1454,7 @@
     background: rgb(105, 240, 174);
 }
 
-.homepage-4-0-0-0-4-2 {
+.homepage-4-1-1-1-0-0-1-0-0-2 {
     display: flex;
     margin-top: 1px;
     padding-left: 48px;
@@ -1460,7 +1467,7 @@
     background: rgb(224, 224, 224);
 }
 
-.homepage-4-0-0-0-4-3 {
+.homepage-4-1-1-1-0-0-1-0-0-3 {
     display: flex;
     margin-top: 1px;
     padding-left: 48px;
@@ -1473,7 +1480,7 @@
     background: rgb(224, 224, 224);
 }
 
-.homepage-4-0-0-0-4-4 {
+.homepage-4-1-1-1-0-0-1-0-0-4 {
     display: flex;
     margin-top: 38px;
     padding-left: 48px;
@@ -1487,7 +1494,7 @@
     background: rgb(105, 240, 174);
 }
 
-.homepage-4-0-0-0-4-5 {
+.homepage-4-1-1-1-0-0-1-0-0-5 {
     display: flex;
     margin-top: 3px;
     padding-left: 48px;
@@ -1500,7 +1507,7 @@
     background: rgb(224, 224, 224);
 }
 
-.homepage-4-0-0-0-4-6 {
+.homepage-4-1-1-1-0-0-1-0-0-6 {
     display: flex;
     padding-left: 48px;
 }
@@ -1512,7 +1519,7 @@
     background: rgb(224, 224, 224);
 }
 
-.homepage-4-0-0-0-4-7 {
+.homepage-4-1-1-1-0-0-1-0-0-7 {
     display: flex;
     margin-top: 37px;
     padding-left: 2px;
@@ -1525,7 +1532,7 @@
     background: linear-gradient(0deg, rgba(128,128,128,0.25), rgba(128,128,128,0.12));
 }
 
-.homepage-4-0-0-0-4-7-0-0 {
+.homepage-4-1-1-1-0-0-1-0-0-7-0-0 {
     display: flex;
     padding-left: 2px;
     padding-right: 3px;
@@ -1538,7 +1545,7 @@
     background: rgb(255, 33, 62);
 }
 
-.homepage-4-0-0-0-4-7-1 {
+.homepage-4-1-1-1-0-0-1-0-0-7-1 {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -1546,7 +1553,7 @@
     padding-bottom: 7px;
 }
 
-.homepage-4-0-0-0-4-7-1-0 {
+.homepage-4-1-1-1-0-0-1-0-0-7-1-0 {
     display: flex;
     padding-right: 31px;
 }
@@ -1558,7 +1565,7 @@
     background: rgb(255, 33, 62);
 }
 
-.homepage-4-0-0-0-4-7-1-1 {
+.homepage-4-1-1-1-0-0-1-0-0-7-1-1 {
     display: flex;
     margin-top: 2px;
 }
@@ -1570,7 +1577,7 @@
     background: rgb(224, 224, 224);
 }
 
-.homepage-4-0-0-0-4-7-1-2 {
+.homepage-4-1-1-1-0-0-1-0-0-7-1-2 {
     display: flex;
     margin-top: 1px;
 }
@@ -1580,6 +1587,12 @@
     height: 5px;
     flex-shrink: 0;
     background: rgb(224, 224, 224);
+}
+
+.homepage-4-2 {
+    height: 0px;
+    flex-grow: 0.42857142857142855;
+    flex-basis: 0px;
 }
 
 .homepage-5 {
