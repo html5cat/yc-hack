@@ -9,7 +9,7 @@ function render() {
         </div>
         <div className="homepage-1">
             <div className="homepage-better_dates_through-1">
-                Better dates through self awareness
+                Better dates through self-awareness
             </div>
         </div>
         <div className="homepage-2">
