@@ -10,8 +10,13 @@ import '../css/styles.css'
 const _ = require('lodash')
 
 const checklist = [
+  "Love Style: Do you know your date's love language?",
+  "Be Imaginative: Come up with questions and topics you can bring up on the date that will get your date to feel excited or romantic, and have these ready to go for any moment the conversation slows.",
   "Do a mental walk-through of the date to help you envision success and to have ideas ready to go!",
-  "Be Optimistic – prepare your place in advance with snacks, drinks, candles and other mood-setting features."
+  "Be Optimistic – prepare your place in advance with snacks, drinks, candles and other mood-setting features.",
+  "When it's time, use the 'Yes-No-Maybe' format to check in with your date about their sexual preferences.",
+  "Check your clock.  5 Minutes Early Is On Time; On Time Is Late; Late Is Unacceptable.",
+  "Do your research.  Be in the know about the area and the place you're going on your date."
 ]
 const Question = (props) => (
     <Form.Group grouped>
