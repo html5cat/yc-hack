@@ -219,7 +219,79 @@ function render() {
                         </div>
                         <div className="homepage-shape-15">
                             <div className="homepage-4-0-0-0-1-0">
-                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/4105192488660312-1523752640169-F543E775-F20E-4370-8329-FE94F0EAEB0C.png" className="homepage-shape-41" /> 
+                                <div className="homepage-shape-41">
+                                    <div className="homepage-4-0-0-0-1-0-0-0">
+                                        <div className="homepage-rectangle-path-1" /> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1624395768475543-1523752640156-23660280-A088-4567-B740-F40E69EE2A80.png" className="homepage-shape-1624" /> 
+                        <div className="homepage-rectangle-path-2" /> 
+                        <div className="homepage-shape-108">
+                            <div className="homepage-4-0-0-0-4-0">
+                                <div className="homepage-4-0-0-0-4-0-0">
+                                    <div className="homepage-4-0-0-0-4-0-0-0">
+                                        <div className="homepage-4-0-0-0-4-0-0-0-0">
+                                            <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1724481565314246-1523752640172-5CAF6ED6-BFAE-4E8B-B23C-F9CD53D79D75.png" className="homepage-shape-172" /> 
+                                            <div className="homepage-shape-142">
+                                                <div className="homepage-4-0-0-0-4-0-0-0-0-1-0">
+                                                    <div className="homepage-4-0-0-0-4-0-0-0-0-1-0-0">
+                                                        <div className="homepage-4-0-0-0-4-0-0-0-0-1-0-0-0">
+                                                            <div className="homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0">
+                                                                <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/6283059663688864-1523752640175-40A7E6CF-173D-4ABB-82DA-6A1EFE2E8AD2.png" className="homepage-shape-62" /> 
+                                                                <div className="homepage-oval-307">
+                                                                    <div className="homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0-1-0">
+                                                                        <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1502755604308017-1523752640178-6805F463-BB25-434E-8A25-DDDF1D1A8215.png" className="homepage-shape-150" /> 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="homepage-4-0-0-0-4-0-0-0-0-1-1">
+                                                    <img src="https://pagedraw-images.s3-us-west-1.amazonaws.com/1250725903756171-1523752640174-2DBE331F-8606-41D5-9CBD-7EF878229E7A.png" className="homepage-shape-1250" /> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="homepage-4-0-0-0-4-1">
+                                <div className="homepage-rectangle-path-7" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-2">
+                                <div className="homepage-rectangle-path-6" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-3">
+                                <div className="homepage-rectangle-path-15" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-4">
+                                <div className="homepage-rectangle-path-24" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-5">
+                                <div className="homepage-rectangle-path-4" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-6">
+                                <div className="homepage-rectangle-path-16" /> 
+                            </div>
+                            <div className="homepage-4-0-0-0-4-7">
+                                <div className="homepage-rectangle-path-11">
+                                    <div className="homepage-4-0-0-0-4-7-0-0">
+                                        <div className="homepage-rectangle-path-25" /> 
+                                    </div>
+                                </div>
+                                <div className="homepage-4-0-0-0-4-7-1">
+                                    <div className="homepage-4-0-0-0-4-7-1-0">
+                                        <div className="homepage-rectangle-path-12" /> 
+                                    </div>
+                                    <div className="homepage-4-0-0-0-4-7-1-1">
+                                        <div className="homepage-rectangle-path-155" /> 
+                                    </div>
+                                    <div className="homepage-4-0-0-0-4-7-1-2">
+                                        <div className="homepage-rectangle-path-28" /> 
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

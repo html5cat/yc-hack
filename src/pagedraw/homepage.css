@@ -1265,10 +1265,321 @@
 }
 
 .homepage-shape-41 {
-    width: 181px;
-    height: 292px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/4105192488660312-1523752640169-F543E775-F20E-4370-8329-FE94F0EAEB0C.png');
+    background-size: 100% 100%;
+}
+
+.homepage-4-0-0-0-1-0-0-0 {
+    display: flex;
+    padding-left: 17px;
+    padding-right: 3px;
+}
+
+.homepage-rectangle-path-1 {
+    width: 161px;
+    height: 266px;
+    flex-shrink: 0;
+    background: linear-gradient(0deg, rgba(128,128,128,0.25), rgba(128,128,128,0.12));
+}
+
+.homepage-shape-1624 {
+    width: 146px;
+    height: 285px;
+    flex-grow: 1;
+    position: absolute;
+    top: 178px;
+    left: 225px;
+    border-width: 0px;
+}
+
+.homepage-rectangle-path-2 {
+    width: 158px;
+    height: 261.0000000000001px;
+    flex-grow: 1;
+    position: absolute;
+    top: 178px;
+    left: 210px;
+    background: rgb(255, 255, 255);
+}
+
+.homepage-shape-108 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 3px;
+    padding-bottom: 48px;
+    position: absolute;
+    top: 185px;
+    left: 227px;
+    background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/1082821112681942-1523752640158-F01FCFF1-6B83-4203-AE85-51BE855AE920.png');
+    background-size: 100% 100%;
+}
+
+.homepage-4-0-0-0-4-0 {
+    display: flex;
+    padding-left: 48px;
+    padding-right: 31px;
+}
+
+.homepage-4-0-0-0-4-0-0 {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-4-0-0-0-4-0-0-0 {
+    display: flex;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0 {
+    width: 62px;
+    height: 70px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.homepage-shape-172 {
+    width: 62px;
+    height: 62px;
+    flex-grow: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0px;
+}
+
+.homepage-shape-142 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 4px;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/1425251351892111-1523752640170-DF946478-C589-43FD-B574-B0ED0986BD3F.png');
+    background-size: 100% 100%;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-0 {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 16px;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-0-0 {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0 {
+    display: flex;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0 {
+    width: 26px;
+    height: 30px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.homepage-shape-62 {
+    width: 26px;
+    height: 23px;
+    flex-grow: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-width: 0px;
+}
+
+.homepage-oval-307 {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 11px;
+    position: absolute;
+    top: 7px;
+    left: 1px;
+    background-image: url('https://pagedraw-images.s3-us-west-1.amazonaws.com/3078686237288269-1523752640173-E5502C80-3181-48C5-8CC1-A3DADE4CD86A.png');
+    background-size: 100% 100%;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-0-0-0-0-1-0 {
+    display: flex;
+    padding-left: 18px;
+}
+
+.homepage-shape-150 {
+    width: 5px;
+    height: 12px;
     flex-shrink: 0;
     border-width: 0px;
+}
+
+.homepage-4-0-0-0-4-0-0-0-0-1-1 {
+    display: flex;
+    margin-top: 7px;
+    padding-left: 21px;
+    padding-right: 20px;
+}
+
+.homepage-shape-1250 {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    border-width: 0px;
+}
+
+.homepage-4-0-0-0-4-1 {
+    display: flex;
+    margin-top: 19px;
+    padding-left: 48px;
+    padding-right: 31px;
+}
+
+.homepage-rectangle-path-7 {
+    width: 62px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(105, 240, 174);
+}
+
+.homepage-4-0-0-0-4-2 {
+    display: flex;
+    margin-top: 1px;
+    padding-left: 48px;
+}
+
+.homepage-rectangle-path-6 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
+}
+
+.homepage-4-0-0-0-4-3 {
+    display: flex;
+    margin-top: 1px;
+    padding-left: 48px;
+}
+
+.homepage-rectangle-path-15 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
+}
+
+.homepage-4-0-0-0-4-4 {
+    display: flex;
+    margin-top: 38px;
+    padding-left: 48px;
+    padding-right: 31px;
+}
+
+.homepage-rectangle-path-24 {
+    width: 62px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(105, 240, 174);
+}
+
+.homepage-4-0-0-0-4-5 {
+    display: flex;
+    margin-top: 3px;
+    padding-left: 48px;
+}
+
+.homepage-rectangle-path-4 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
+}
+
+.homepage-4-0-0-0-4-6 {
+    display: flex;
+    padding-left: 48px;
+}
+
+.homepage-rectangle-path-16 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
+}
+
+.homepage-4-0-0-0-4-7 {
+    display: flex;
+    margin-top: 37px;
+    padding-left: 2px;
+}
+
+.homepage-rectangle-path-11 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    background: linear-gradient(0deg, rgba(128,128,128,0.25), rgba(128,128,128,0.12));
+}
+
+.homepage-4-0-0-0-4-7-0-0 {
+    display: flex;
+    padding-left: 2px;
+    padding-right: 3px;
+}
+
+.homepage-rectangle-path-25 {
+    width: 21px;
+    height: 21px;
+    flex-shrink: 0;
+    background: rgb(255, 33, 62);
+}
+
+.homepage-4-0-0-0-4-7-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 1px;
+    padding-bottom: 7px;
+}
+
+.homepage-4-0-0-0-4-7-1-0 {
+    display: flex;
+    padding-right: 31px;
+}
+
+.homepage-rectangle-path-12 {
+    width: 62px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(255, 33, 62);
+}
+
+.homepage-4-0-0-0-4-7-1-1 {
+    display: flex;
+    margin-top: 2px;
+}
+
+.homepage-rectangle-path-155 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
+}
+
+.homepage-4-0-0-0-4-7-1-2 {
+    display: flex;
+    margin-top: 1px;
+}
+
+.homepage-rectangle-path-28 {
+    width: 93px;
+    height: 5px;
+    flex-shrink: 0;
+    background: rgb(224, 224, 224);
 }
 
 .homepage-5 {
