@@ -205,7 +205,7 @@ const Question = (props) => (
       <Header size='medium'>{props.data.text}</Header>
       {
         _.map(props.data.choices, (choice, index) => {
-          return <Form.Checkbox key={index} label={choice} questionKey={props.key} onClick={this.props.handleOnClick}/>
+          return <Form.Checkbox key={index} label={choice} questionKey={props.key}/>
         })
       }
       <Form.TextArea width={12} label='Additional thoughts' />
@@ -215,7 +215,7 @@ const Question = (props) => (
 export default class SharedReflection extends React.Component {
   constructor() {
     super()
-    this.state = debrief;
+    // this.state = debrief;
   }
 
   logout() {
