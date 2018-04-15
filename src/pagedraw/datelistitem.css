@@ -168,14 +168,10 @@
     border-width: 0.5px;
 }
 
-.datelistitem-0-0-1-1 {
-    flex-shrink: 0;
-    margin-left: 15px;
-    display: flex;
-}
-
 .datelistitem-label-7 {
     width: 226px;
+    flex-shrink: 0;
+    margin-left: 15px;
     cursor: pointer;
     font-family: "Muli", sans-serif;
     color: rgb(255, 255, 255);
@@ -187,7 +183,6 @@
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
-    flex-grow: 1;
 }
 
 .datelistitem-0-0-2 {
@@ -217,14 +212,10 @@
     border-width: 0.5px;
 }
 
-.datelistitem-0-0-2-1 {
-    flex-shrink: 0;
-    margin-left: 15px;
-    display: flex;
-}
-
 .datelistitem-label-8 {
     width: 207px;
+    flex-shrink: 0;
+    margin-left: 15px;
     font-family: "Muli", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -235,7 +226,6 @@
     text-decoration: none;
     text-align: left;
     word-wrap: break-word;
-    flex-grow: 1;
 }
 
 * {

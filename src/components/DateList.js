@@ -22,7 +22,7 @@ const Question = (props) => (
           return <Form.Checkbox key={index} label={choice}/>
         })
       }
-      <Form.TextArea width={12} label='Additional thoughts' />
+      <Form.TextArea  width={12} label='Additional thoughts' />
     </Form.Group>
 )
 
@@ -125,7 +125,10 @@ export default class DateList extends React.Component {
 
   dateToCardGroup(dates) {
     return _.map(dates, (date) => {
-      return <DateListItem key={date.key} date={date} privateLink="jkjk"/>
+
+      return (<a key={date.key} href={'/dates/' + date.key + '/shared'}>
+                <DateListItem date={date} sharedLink={'/' + date.key + '/shared'} privateLink={'/' + date.key + '/private'}/>
+              </a>)
     })
   }
 
