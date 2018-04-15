@@ -148,7 +148,7 @@ const Question = (props) => (
       <Header size='medium'>{props.data.text}</Header>
       {
         _.map(props.data.choices, (choice, index) => {
-          return <Form.Checkbox key={index} label={choice} questionKey={props.key}/>
+          return <Form.Radio key={index} label={choice} questionKey={props.key}/>
         })
       }
       <Form.TextArea width={12} label='Additional thoughts' />
