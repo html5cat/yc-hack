@@ -10,9 +10,8 @@ import '../css/styles.css'
 const _ = require('lodash')
 
 const checklist = [
-  "a",
-  "bug",
-  'charlie'
+  "Do a mental walk-through of the date to help you envision success and to have ideas ready to go!",
+  "Be Optimistic – prepare your place in advance with snacks, drinks, candles and other mood-setting features."
 ]
 const Question = (props) => (
     <Form.Group grouped>
