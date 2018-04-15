@@ -141,9 +141,15 @@ export default class DateList extends React.Component {
             <List.Content>
               {
                 _.map(checklist, (text, index) => {
-                  return <List.Item key={index}>
-                    <Checkbox label={text}/>
-                  </List.Item>
+                  return (
+                    <div>
+                      <List.Item key={index}>
+                        <Checkbox label={text}/>
+                      </List.Item>
+                      <Divider hidden />
+                    </div>
+
+                  )
                 })
               }
             </List.Content>
@@ -186,9 +192,16 @@ export default class DateList extends React.Component {
 
                   <Modal.Content>
                     <Input label="Who" defaultValue={this.state.newDate.name} onChange={(e) => this.updateNewDateName(e)}/>
+                      <Divider hidden />
+
                     <Input label="Where" defaultValue={this.state.newDate.location} onChange={(e) => this.updateNewDateLocation(e)}/>
+                      <Divider hidden />
+
                     <Input label="Month" defaultValue={this.state.newDate.month}  onChange={(e) => this.updateNewDateMonth(e)}/>
+                      <Divider hidden />
+
                     <Input label="Day" defaultValue={this.state.newDate.day}  onChange={(e) => this.updateNewDateDay(e)}/>
+                      <Divider hidden />
 
                   </Modal.Content>
                   <Modal.Actions>
