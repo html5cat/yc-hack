@@ -8,12 +8,10 @@ const _ = require('lodash')
 
 const debrief = [
   {
-    text: 'What is your favorite type of ice cream?',
+    text: 'Did your date bring up topics that sparked your curiosity?',
     choices: [
-      'Chocolate',
-      'Vanilla',
-      'Strawberry',
-      'Other'
+      'Yes',
+      'No'
     ],
     answer: {
       choice: null,
@@ -21,10 +19,43 @@ const debrief = [
     }
   },
   {
-    text: 'What is your favorite type of ice cream',
+    text: 'Did your date understand what you were trying to convey?',
     choices: [
-      'Chocolate',
-      'Vanilla',
+      'Yes',
+      'No'
+    ],
+    answer: {
+      choice: null,
+      info: ''
+    }
+  },
+  {
+    text: 'Do you feel that you gave your date your undivided attention during the date? ',
+    choices: [
+      'Yes',
+      'No'
+    ],
+    answer: {
+      choice: null,
+      info: ''
+    }
+  },
+  {
+    text: 'Did you ask your date clarifying questions?',
+    choices: [
+      'Yes',
+      'No'
+    ],
+    answer: {
+      choice: null,
+      info: ''
+    }
+  },
+  {
+    text: 'Did your date engage you to think about things in different ways? ',
+    choices: [
+      'Yes',
+      'No'
     ],
     answer: {
       choice: null,
