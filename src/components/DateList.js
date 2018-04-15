@@ -32,10 +32,10 @@ export default class DateList extends React.Component {
     this.state = {
       modalPage: 0,
       newDate: {
-        name: 'me',
-        location: 'here',
-        month: 'Sep',
-        day: '28'
+        name: "your date's name",
+        location: 'San Francisco',
+        month: 'Apr',
+        day: '14'
       },
       dates: [
         // {who: 'Jane Doe', when: 'September 29th', where: 'SOMA'},

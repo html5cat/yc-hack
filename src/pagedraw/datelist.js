@@ -25,7 +25,7 @@ function render() {
         </div>
         <div className="datelist-3">
             <div className="datelist-datelistitem_instance-1">
-                <Datelistitem date={{"name": "Yuriy Dybskiy", "location": "YC Hackathon", "month": "April", "day": "14"}} /> 
+                <Datelistitem date={{"name": "Yuriy Dybskiy", "location": "YC Hackathon", "month": "April", "day": "14"}} privateLink={"test"} sharedLink={"test"} /> 
             </div>
         </div>
         <div className="datelist-4" /> 

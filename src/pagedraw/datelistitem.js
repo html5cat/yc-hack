@@ -42,11 +42,9 @@ function render() {
                             <div className="datelistitem-path-9" /> 
                         </div>
                     </div>
-                    <a href="{@props.privateLink}" className="datelistitem-0-0-1-1">
-                        <div className="datelistitem-label-7">
-                            Private check-in
-                        </div>
-                    </a>
+                    <div className="datelistitem-label-7">
+                        Private check-in
+                    </div>
                 </div>
                 <div className="datelistitem-0-0-2">
                     <div className="datelistitem-0-0-2-0">
@@ -54,12 +52,10 @@ function render() {
                             <div className="datelistitem-path-1" /> 
                         </div>
                     </div>
-                    <a href="#{@props.sharedLink}" className="datelistitem-0-0-2-1">
-                        <div className="datelistitem-label-8">
-                            <div>Mutual feedback</div>
-                            <div>Not started</div>
-                        </div>
-                    </a>
+                    <div className="datelistitem-label-8">
+                        <div>Mutual feedback</div>
+                        <div>Not started</div>
+                    </div>
                 </div>
             </div>
         </div>
