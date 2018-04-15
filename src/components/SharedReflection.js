@@ -6,65 +6,6 @@ import { Redirect } from 'react-router-dom'
 import firebase from 'firebase';
 const _ = require('lodash')
 
-/*
-
-
-*Which topics felt most connecting between you  and your date?*
-- Childhood
-- Geography
-- Interests
-- Work
-- Relationships
-- Politics
-- Values
-- Monetary
-
-*Which topics felt least connecting between you  and your date?*
-- Childhood
-- Geography
-- Interests
-- Work
-- Relationships
-- Politics
-- Values
-- Monetary
-
-Boundaries + Etiquette
-
-*How did you feel about the way your date behaved with waitstaff or service workers?*
-- Not polite enough
-- A bit less polite than ideal
-- Just right
-
-*How did you feel about the punctuality of your date?*
-- Doesn’t care enough about it
-- Perfect, just right
-- Too picky about it
-
-*How do you feel about the monetary contributions between you and your date?*
-- Perhaps my date should have contributed a bit more
-- I was comfortable with it
-- Perhaps I should have contributed a bit more
-
-
-Communication
-
-*How did you feel about the split between how much each of you talked?*
-- My date talked more than I preferred
-- I was happy with the split
-- My date talked less than I preferred
-
-*How did you feel about the split between how much your date talked about him/herself vs. you?*
-- We talked more about my date than I wanted to
-- I was happy with the split
-- We talked more about me than I wanted to
-
-*How did you feel about how much your date cared about your opinions?*
-- My date cared about my opinions too much
-- My date cared about my opinions just enough
-- My date didn’t care enough about my opinions
-
-*/
 const debrief = [
   {
     text: 'How did you feel about the pace of physical intimacy on the date?',
@@ -95,12 +36,16 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'Which topics felt most connecting between you  and your date?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'Childhood',
+      'Geography',
+      'Interests',
+      'Work',
+      'Relationships',
+      'Politics',
+      'Values',
+      'Monetary',
     ],
     answer: {
       choice: null,
@@ -108,12 +53,16 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'Which topics felt least connecting between you  and your date?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'Childhood',
+      'Geography',
+      'Interests',
+      'Work',
+      'Relationships',
+      'Politics',
+      'Values',
+      'Monetary',
     ],
     answer: {
       choice: null,
@@ -121,12 +70,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How did you feel about the split between how much each of you talked?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'My date talked more than I preferred',
+      'I was happy with the split',
+      'My date talked less than I preferred',
     ],
     answer: {
       choice: null,
@@ -134,12 +82,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How did you feel about the split between how much your date talked about him/herself vs. you?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'We talked more about my date than I wanted to',
+      'I was happy with the split',
+      'We talked more about me than I wanted to',
     ],
     answer: {
       choice: null,
@@ -147,12 +94,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How did you feel about how much your date cared about your opinions?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'My date cared about my opinions too much',
+      'My date cared about my opinions just enough',
+      'My date didn’t care enough about my opinions',
     ],
     answer: {
       choice: null,
@@ -160,12 +106,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How did you feel about the way your date behaved with waitstaff or service workers?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'Not polite enough',
+      'A bit less polite than ideal',
+      'Just right',
     ],
     answer: {
       choice: null,
@@ -173,12 +118,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How did you feel about the punctuality of your date?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'Doesn’t care enough about it',
+      'Perfect, just right',
+      'Too picky about it',
     ],
     answer: {
       choice: null,
@@ -186,12 +130,11 @@ const debrief = [
     }
   },
   {
-    text: '',
+    text: 'How do you feel about the monetary contributions between you and your date?',
     choices: [
-      '',
-      '',
-      '',
-      ''
+      'Perhaps my date should have contributed a bit more',
+      'I was comfortable with it',
+      'Perhaps I should have contributed a bit more',
     ],
     answer: {
       choice: null,
